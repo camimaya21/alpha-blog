@@ -8,4 +8,12 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
+  def new
+  end
+
+  def create
+    @article = Article.new(params.require(:article).permit(:title, :description, :status))
+    @article.save
+    redirect_to @article
+  end
 end
