@@ -3,4 +3,8 @@
   <h2> <%= @article.title %> </h2>
   <p> <%= @article.description %> </p>
   <p> <%= @article.status %> </p>
+
+  <%= link_to 'Back to list', articles_path %> | 
+  <%= link_to 'Edit', edit_article_path(@article) %> | 
+  <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: "are you sure?" } %>
 </div>

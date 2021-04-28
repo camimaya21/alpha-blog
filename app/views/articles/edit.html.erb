@@ -26,3 +26,6 @@
     <%= f.submit %>
   </p>
 <% end %>
+
+<%= link_to 'Cancel and back to list', articles_path %> | 
+<%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: "are you sure?" } %>
