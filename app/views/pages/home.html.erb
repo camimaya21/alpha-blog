@@ -1,8 +1,8 @@
-<div>
-  <h1>Welcome to Alpha Blog</h1>
-  <p>My first ruby on rails app :)</p>
+<div class="container" id="home-container">
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Alpha Ruby Blog</h1>
+    <p class="lead">“Patience you must have my young Padawan.” — Yoda</p>
+    <hr class="my-4">
+    <%= link_to "Sign up!", signup_path, class: "btn btn-success btn-lg" %>
+  </div>
 </div>
-
-<%= link_to 'Articles list', articles_path %> | 
-<%= link_to 'About page', about_path %> | 
-<%= link_to 'Sign up!', signup_path %>
